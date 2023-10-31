@@ -1,0 +1,80 @@
+:root{
+    --dark__green: #002D2A;
+    --main__green: #00B4AB;
+    --shadow__mainG: #00918A;
+    --white: #EEEEEE;
+    --offwhite: #818589;
+    --another__dark__green: #10423F;
+    --black: #000000;
+    --another__black: #1d2631;
+
+    --fonte: 'Raleway', sans-serif;
+}
+
+.cabecalho{
+    background-color: var(--main__green);
+    margin-bottom: 2.5rem;
+}
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    height: 8.5rem;
+}
+.search{
+    height: 25%;
+    max-height: 15rem;
+    width: 45rem;
+    max-width: 45rem;
+    background-color: var(--another__dark__green);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 2rem  ;
+}
+.search input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 1rem;
+    font-family: var(--fonte);
+    color: var(--white);
+}
+::placeholder{
+    color: var(--offwhite);
+}
+.search button img{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-top: rem;
+    margin-left: 0.1rem;
+
+}
+.search button{
+    border: 0;
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: var(--dark__green);
+    transition: 1s;
+}
+.search button:hover{
+    background-color: var(--main__green);
+    transition: 1s;
+}
+.icone{
+    padding-right: 3rem;
+}
+.carrinho{
+    padding-top: 2rem;
+    height: 3.5rem;
+}
+.login{
+    padding-bottom: 0.1rem;
+    height: 3rem;
+}
