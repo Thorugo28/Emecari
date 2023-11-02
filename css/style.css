@@ -3,7 +3,7 @@
     --main__green: #00B4AB;
     --shadow__mainG: #00918A;
     --white: #EEEEEE;
-    --offwhite: #818589;
+    --offwhite: #c7d3e0;
     --another__dark__green: #10423F;
     --black: #000000;
     --another__black: #1d2631;
@@ -48,9 +48,9 @@
 ::placeholder{
     color: var(--offwhite);
 }
-.search button img{
-    height: 1.3rem;
-    width: 1.3rem;
+.search button svg{
+    height: 1.5rem;
+    width: 1.5rem;
     margin-top: rem;
     margin-left: 0.1rem;
 
@@ -73,8 +73,10 @@
 .carrinho{
     padding-top: 2rem;
     height: 3.5rem;
+    width: 3.5rem;
 }
 .login{
     padding-bottom: 0.1rem;
     height: 3rem;
+    width: 3rem;
 }

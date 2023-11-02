@@ -164,6 +164,9 @@ h1{
     margin: 1.5rem;
     margin-left:  1rem;
 }
+.link__produto{
+    text-decoration: none;
+}
 
 .card__image{
     background-color: transparent;
@@ -210,4 +213,61 @@ h1{
     flex-direction: row;
     max-height: 35rem;
     justify-content: center;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 2rem;
+    background-color: black;
+    font-family: var(--fonte);
+}
+
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+    background-color: var(--main__green);
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--w);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footer-icons a i{
+    font-size: 2em;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li a{
+    color: var(--white);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.footer-botton{
+    background-color: var(--main__green);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
 }
