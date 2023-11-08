@@ -1,42 +1,6 @@
-<?php 
+<?php
+    session_start();
     include('php/conexão.php');
-
-    if(isset($_POST['email']) || isset($_POST['senha'])){
-
-        if(strlen($_POST['email']) == 0){
-            echo "Prencha seu e-mail";
-        }else if(strlen($_POST['senha']) == 0){
-            echo "Preencha sua senha";
-        }else{
-
-            $email = $mysqli->real_escape_string($_POST['email']);
-            $senha = $mysqli->real_escape_string($_POST['senha']);
-
-            $sql_code = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$senha'";
-            $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: ".$mysqli->error);
-
-            $quantidade = $sql_query->num_rows;
-
-            if($quantidade == 1){
-
-                $usuario = $sql_query->fetch_assoc();
-
-                if(!isset($_SESSION)){
-                    session_start();
-                }
-
-                $_SESSION['id'] = $usuario['id'];
-                $_SESSION['nome'] = $usuario['nome'];
-
-                header("Location: index.html");
-
-            } else{
-                echo "Falha ao logar! Email ou senha incorretos";
-            }
-
-        }
-
-    }
 
 ?>
 
@@ -45,7 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
+
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
@@ -56,11 +21,13 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" type="image/x-icon" href="img/favicon_package_v0.16/favicon.ico">
 </head>
 <body>
+
     <header class="cabecalho">
         <div class="header__container">
 
@@ -86,31 +53,67 @@
             </nav>
         </div>
     </header>
+    
+    <form class="form__cadastro" action="cadastrar.php" method="POST">
+        <h1>Crie sua conta</h1>
 
-<section class="form__container">
-    <form class="form__login" action="" method="POST">
-        <h1>Acesse sua conta</h1>
+        <div class="info__p">
+            <span>Informações pessoais</span>
+            <div class="input__container">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" required>
+            </div>
 
-        <div class="container_input">
+            <div class="input__container">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" required>
+            </div>
+
+            <div class="input__container">
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" required>
+            </div>
+
+            <div class="input__container">
+                <label for="celular">Celular</label>
+                <input type="text" nam="celular">
+            </div>
+        </div>
+
+        <div class="entrega">
+            <span>Informações para entrega</span>
+            <div class="input__container">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" maxlength="2" required>
+            </div>
+
+            <div class="input__container">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" required>
+            </div>
+
+            <div class="input__container">
+                <label for="endereço">Endereço</label>
+                <input type="text" name="endereço" required>
+            </div>
+        </div>
+
+        <div class="input__container">
             <label for="email">E-mail</label>
-            <input class="data_insert" type="text" name="email">
+            <input type="text" name="email" required>
         </div>
 
-        <div class="container_input">
+        <div class="input__container">
             <label for="senha">Senha</label>
-            <input class="data_insert" type="password" name="senha">
+            <input type="password" name="senha" required>
         </div>
+        
 
-        <button class="sub_btn" type="submit">Entrar</button>
-
-        <div class="container__cd">
-            <span class="cadastro__msg">Não tem uma conta? clique abaixo para se cadastrar</span>
-            <a class="link__cd" href="cadastro.php" type="btn">Cadastre-se</a>
-        </div>
+         <button type="submit">Cadastrar</button>
     </form>
-</section>
 
-<footer>
+
+    <footer>
         <div class="footer-container">
             <div class="footer-icons">
                 <a href="#"><i class='bx bxl-facebook-square' ></i></a>

@@ -1,0 +1,230 @@
+:root{
+    --dark__green: #002D2A;
+    --main__green: #00B4AB;
+    --shadow__mainG: #00918A;
+    --white: #EEEEEE;
+    --offwhite: #d0d8e0;
+    --another__dark__green: #10423F;
+    --black: #000000;
+    --another__black: #1d2631;
+
+    --fonte: 'Raleway', sans-serif;
+}
+
+.cabecalho{
+    background-color: var(--main__green);
+    margin-bottom: 2.5rem;
+}
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    height: 8.5rem;
+}
+.search{
+    height: 25%;
+    max-height: 15rem;
+    width: 45rem;
+    max-width: 45rem;
+    background-color: var(--another__dark__green);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 2rem  ;
+}
+.search input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 1rem;
+    font-family: var(--fonte);
+    color: var(--white);
+}
+::placeholder{
+    color: var(--offwhite);
+}
+.search button svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: rem;
+    margin-left: 0.1rem;
+
+}
+.search button{
+    border: 0;
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: var(--dark__green);
+    transition: 1s;
+}
+.search button:hover{
+    background-color: var(--main__green);
+    transition: 1s;
+}
+.icone{
+    padding-right: 3rem;
+}
+.carrinho{
+    padding-top: 2rem;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.login{
+    padding-bottom: 0.1rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+
+
+body{
+    font-family: var(--fonte);
+    background-color: var(--another__black);
+    justify-content: center;
+}
+
+.form__login{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 2px solid var(--main__green);
+    border-radius: 10px;
+    width: 30%;
+}
+h1{
+    font-size: 2rem;
+    color: var(--white);
+}
+.container_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 1.3rem;
+    width: 35%;
+    height: 15%;
+    font-size: 1.4rem;
+    color: var(--white);
+}
+.container_input input{
+    width: 100%;
+    height: 25%;
+    border:  2px solid var(--main__green);
+    border-radius: 20px;
+    padding: 0.75rem;
+}
+.data_insert{
+    height: 2rem;
+}
+.sub_btn{
+    transform: scale(1);
+    font-size: 20px;
+    background-color: transparent;
+    font-family: var(--fonte);
+    border: 2px solid var(--main__green);
+    border-radius: 20px;
+    padding: 0.7rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+    transition: 1s;
+}
+.sub_btn:hover{
+    transform: scale(1.1);
+    background-color: var(--main__green);
+    color: var(--black);
+    transition: 1s;
+}
+.container__cd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.cadastro__msg{
+    color: var(--white);
+    font-size: 1.2rem;
+    padding: 1.2rem;
+}
+.link__cd{
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    background-color: transparent;
+    width: 30%;
+    margin: 1.2rem;
+    padding: 0.4rem;
+    border-radius: 20px;
+    transition: 1s;
+    font-size: 1.2rem;
+    border: 2px solid var(--main__green);
+}
+.link__cd:hover{
+    color: var(--black);
+    background-color: var(--main__green);
+    transition: 1s;
+}
+
+footer{
+    margin-top: 2rem;
+    background-color: black;
+    font-family: var(--fonte);
+}
+
+.footer-container{
+    width: 100%;
+    padding: 50px 0px 20px;
+    background-color: var(--main__green);
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--w);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footer-icons a i{
+    font-size: 2em;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li a{
+    color: var(--white);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.footer-botton{
+    background-color: var(--main__green);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
