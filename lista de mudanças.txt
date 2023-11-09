@@ -1,7 +1,0 @@
-Essa é uma lista  de anotações para alterações pequenas a serem feitas antes de entregar o projeto
-
--Conferir TODAS as paletas de cores.
--Mudar o Lorem Ipsum da pagina do produto e da Mainpage.
--Adicionar/conferir o favicon de TODAS as paginas
--Conferir o titulo de TODAS as paginas.
--Adicionar required no cadastro

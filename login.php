@@ -61,7 +61,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon_package_v0.16/favicon.ico">
 </head>
 <body>
-    <header class="cabecalho">
+<header class="cabecalho">
         <div class="header__container">
 
             <a href="index.html"><img class="logo" src="img/logo_branca.png" alt="logo"></a>
@@ -121,7 +121,7 @@
             <div class="footer-nav">
             <ul>
                 <li><a href="#">Loja</a></li>
-                <li><a href="#">Sobre Nos</a> </li>
+                <li><a href="sobreNos.html">Sobre Nos</a> </li>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Ajuda</a></li>
                 <li><a href="#">Politica de Privacidade</a></li>
@@ -133,6 +133,7 @@
                 <p>Copyright &copy;2023;</p>
             </div>
         </div>
-</footer>
+    </footer>
+
 </body>
 </html>

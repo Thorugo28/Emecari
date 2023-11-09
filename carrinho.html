@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Carrinho</title>
+
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <!-- or -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet"
-    href="css/carrinho.css">
 
-    <title>Carrinho</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/x-icon" href="img/favicon_package_v0.16/favicon.ico">
 </head>
 <body>
-
     <header class="cabecalho">
         <div class="header__container">
 
@@ -31,7 +37,7 @@
             </div>
 
             <nav class="menu__header">
-                <a href="carrinho.html  ">
+                <a href="carrinho.html">
                     <img width="50" height="50" class="icone carrinho" src="https://img.icons8.com/ios/50/FFFFFF/shopping-cart-loaded--v1.png" alt="shopping-cart-loaded--v1"/>
                 </a>
                 <a href="login.php">
@@ -40,81 +46,94 @@
             </nav>
         </div>
     </header>
-
     <main>
-        <div class="page-title">Carrinho</div>
-            <div class="content">
-                <!--listagem de produtos-->
-                <section>
-                    <table class="tabela">
-                        <thead>
-                            <tr>
-                                <th class="tabela-head">Produto</th>
-                                <th class="tabela-head">Quantidade</th>
-                                <th class="tabela-head">Preço</th>
-                                <th class="tabela-head">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><!--1-->
-                            <td>
-                                <div class="product">
-                                    <img src="img/games/re2.jpg" alt="">
-                                    <div class="info">
-                                        <div class="produto-nome">Resident Evil 2 Remake</div>
-                                    </div>
-                                </div>
+        <section class="title"> <h2>Meu Carrinho de Compras</h2> </section>
+        <section class="content">
+            <table>
+                <thead class="thead">
+                    <tr class="theader">
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>x</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <div class="inside_cart">
+                    <tr class="box_cart">
+                            <td class="product_info">
+                                <img class="product_img" src="img/computer/monitorGamer.jpg" alt="nome">
+                                <strong class="product_name">Monitor LG UltraWide</strong>
                             </td>
                             <td>
-                                <div class="qty">
-                                    <button class="btn-menos">-</button>
-                                    <span>2</span>
-                                    <button class="btn-mais">+</button>
-                                </div>
+                                <input name="qtd" class="product_qtd" type="number" value="1" min="1">
                             </td>
-                            <td>R$ 120</td>
-                            <td>R$240</td>
-                            <td><button class="remover"><i class='bx bx-trash'></i></button></td>
-                            </tr><!--1 final-->
-                            <tr><!--2-->
-                                <td>
-                                    <div class="product">
-                                        <img src="img/games/pokemonArceus.jpg" alt="">
-                                        <div class="info">
-                                            <div class="produto-nome">Pokémon Legends Arceus</div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="qty">
-                                        <button class="btn-menos">-</button>
-                                        <span>2</span>
-                                        <button class="btn-mais">+</button>
-                                    </div>
-                                </td>
-                                <td>R$ 120</td>
-                                <td>R$240</td>
-                                <td><button class="remover"><i class='bx bx-trash'></i></button></td>
-                                </tr><!--2 final-->
-                        </tbody>
-                    </table>
-                </section>
-                <!--resumo das compras-->
-                <aside>
-                    <div class="box">
-                        <header2>Resumo da Compra</header2>
-                        <div class="info2">
-                            <div class="valor"><span>SubTotal</span><span>R$418,00</span></div>
-                            <div class="valor"><span>Frete</span><span>R$0,00</span></div>
-                        </div>
-                        <footer2>
-                            <span>Total</span>
-                            <span>R$418,00</span>
-                        </footer2>
+                            <td class="product_price">
+                                R$ 1199,90
+                            </td>
+                            <td>
+                                <button class="product_exclud">x</button>
+                            </td>
+                    </tr><!--final 1-->
                     </div>
-                    <button class="fim">Finalizar Compra</button>
-                </aside>
+                    <div class="inside_cart">
+                    <tr class="box_cart">
+                            <td class="product_info">
+                                <img class="product_img" src="img/computer/memoria_8gb.jpg" alt="nome">
+                                <strong class="product_name">Memória RAM 8GB Hyperx</strong>
+                            </td>
+                            <td>
+                                <input name="qtd" class="product_qtd" type="number" value="1" min="1">
+                            </td>
+                            <td class="product_price">
+                                R$ 389,90
+                            </td>
+                            <td>
+                                <button class="product_exclud">x</button>
+                            </td>
+                    </tr><!--final 2-->
+                    </div>
+                </tbody>
+            </table>
+        </section>
+        <section class="box">
+            <div class="title">
+                <h5>Resumo da Compra</h5>
             </div>
+            <div class="preco_total">
+                <p>Total: R$ 0,00</p>
+            </div>
+            <button class="finish">
+                <p>Finalizar Compra</p>
+            </button>
+        </section>
+        <!--Aqui ficaria oq eu perguntei pra luiza-->
     </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-icons">
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <div class="footer-nav">
+            <ul>
+                <li><a href="#">Loja</a></li>
+                <li><a href="sobreNos.html">Sobre Nos</a> </li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Politica de Privacidade</a></li>
+                <li><a href="#">Termo e Condicoes</a></li>
+                <li></li>
+            </ul>
+            </div>
+            <div class="footer-botton">
+                <p>Copyright &copy;2023;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/carrinho.js"></script>
 </body>
 </html>

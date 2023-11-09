@@ -1,6 +1,9 @@
 body{
     background-color: var(--another__black);
 }
+html, body {
+    overflow-x: hidden;
+}
 
 .slider{
     width: 1300px;
@@ -118,6 +121,7 @@ h1{
 .section__title{
     padding-top: 6rem;
     font-family: var(--fonte);
+    padding: 3rem 0.7rem 0 0.7rem ;
     font-weight: bold;
     font-size: 29px;
     text-align: center;
@@ -125,7 +129,7 @@ h1{
 #computer__menu{
     background-color: var(--main__green);
     width: 60%;
-    margin-left: 3.5rem;
+    margin-left: 2rem;
     max-width: 15rem;
     border-radius: 5%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5)
