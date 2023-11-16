@@ -30,6 +30,6 @@ if($mysqli->query($sql) === TRUE) {
 
 $mysqli->close();
 
-header('Location: php/painel.php');
+header('Location: login.php');
 exit;
 ?>

@@ -31,7 +31,7 @@
                 header("Location: index.html");
 
             } else{
-                echo "Falha ao logar! Email ou senha incorretos";
+                echo "<div class=mensagem_erro>Falha ao logar! Email ou senha incorretos</div>";
             }
 
         }

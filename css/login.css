@@ -11,6 +11,15 @@
     --fonte: 'Raleway', sans-serif;
 }
 
+.mensagem_erro{
+    color: #d9534f;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
 .cabecalho{
     background-color: var(--main__green);
     margin-bottom: 2.5rem;
